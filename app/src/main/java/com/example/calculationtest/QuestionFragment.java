@@ -112,7 +112,6 @@ public class QuestionFragment extends Fragment {
                     binding.textView9.setText(R.string.answer_corrrect_message);
                     //builder.append(getString(R.string.answer_corrrect_message));
                 } else {
-                    myViewModel.getCurrentScore().setValue(0);
                     NavController controller = Navigation.findNavController(v);
                     if (myViewModel.win_flag) {
                         controller.navigate(R.id.action_questionFragment_to_winFragment);
